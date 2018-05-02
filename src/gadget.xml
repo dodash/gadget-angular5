@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
     <ModulePrefs title="Angular Gadget" author="" author_email="" height="350" 
-        description="An example of an OpenSocial gadget built with Angular2">
+        description="An example of an OpenSocial gadget built with Angular5">
         <Require feature="dynamic-height" />
         <Require feature="views" />
     </ModulePrefs>
