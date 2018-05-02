@@ -1,27 +1,34 @@
-# Angular5
+# gadget-angular5
+scaffold for angularj5 app
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+# An OpenSocial Gadget Written In Angular5
 
-## Development server
+## Intro
+This is an example project for creating an opensocial gadget for hosting in an opensocial container.This project is embedded with angular5 lib
+with simple "Welcome to Angular5 App!" app.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Steps 
+First install the necessary dependencies, this may take a few minutes.
+```
+npm install
+```
+Install the angular-cli dependencies (if not installed), this may take a few minutes.
+```
+npm install -g @angular/cli
+```
+Start a Development Server
+```
+ng serve --open
+```
+You can now access the gadget or execute standalone angular5 app from http://localhost:4200 (opens automatically in browser) and you see "Welcome to Angular5 App!" getting displayed.
 
-## Code scaffolding
+Once application is ready, create a production build by running
+```
+ng build
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This will create production copy of application. you will be able to "dist" directory. move "gadget.xml" present under "src" directory to "dist" directory. now, you can copy "dist" directory to any web server and run it.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Adding to an Open Social Container (dashboard)
+To add this gadget to an open social container, specify the URL to the gadget.xml file served by this Angular application, e.g.
+http://localhost:4200/gadget.xml. If you change the host/port, make sure you edit the gadget.xml accordingly e.g http://localhost:4200.
