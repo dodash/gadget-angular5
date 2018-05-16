@@ -1,0 +1,9 @@
+
+sudo: false
+language: node_js
+node_js:
+  - v6
+  - v5
+before_script:
+  - npm install -g @angular/cli
+script: ng build
