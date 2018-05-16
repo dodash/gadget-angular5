@@ -1,4 +1,4 @@
-# gadget-angular5
+# gadget-angular5    [![Build Status](https://travis-ci.org/dodash/gadget-angular5.svg?branch=master)](https://travis-ci.org/dodash/gadget-angular5)
 scaffold for angularj5 app
 
 # An OpenSocial Gadget Written In Angular5
